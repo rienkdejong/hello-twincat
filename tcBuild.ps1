@@ -3,7 +3,7 @@ $dte.SuppressUI = $true # suppress VS interface
 
 # open solution file
 echo "Opening solution"
-$slnPath = "$pwd\TwinCAT Project\TwinCAT Project.sln"
+$slnPath = "$pwd\HelloWorld.sln"
 $sln = $dte.Solution
 $sln.Open($slnPath)
 
