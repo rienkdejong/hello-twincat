@@ -1,5 +1,5 @@
 $dte = new-object -com "TcXaeShell.DTE.17.0" # XaeShell64 COM ProgId
-$dte.SuppressUI = $true # suppress VS interface
+$dte.SuppressUI = $true
 
 # open solution file
 echo "Opening solution"
