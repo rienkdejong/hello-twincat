@@ -1,9 +1,11 @@
 $dte = new-object -com "TcXaeShell.DTE.17.0" # XaeShell64 COM ProgId
-#$dte.SuppressUI = $true
+$dte.SuppressUI = $true
 
 # open solution file
 echo "Opening solution"
-$slnPath = "$pwd\HelloWorld.sln"
+$workingdir = pwd
+$slnPath = "$workingdir\HelloWorld.sln"
+echo $slnPath
 $sln = $dte.Solution
 $sln.Open($slnPath)
 
